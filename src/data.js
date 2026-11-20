@@ -1,0 +1,51 @@
+export const issues = [
+{group:"Power & cabling",title:"Router does not power on",summary:"Check the approved power source and cable connections.",steps:["Confirm the UPS is switched on and has sufficient charge.","Check that the router power cable is firmly connected.","Use only the approved power output and adapter specified for the device.","Try a known-good approved cable or power source if available.","If there is still no power, record the device indicators and escalate."],warning:"Do not connect an unverified voltage supply or force incompatible connectors."},
+{group:"Connectivity",title:"No internet connection",summary:"Work through the ODU, PoE and router link checks.",steps:["Confirm the ODU is mounted securely and aligned as instructed.","Check that the ODU data cable is connected to the correct marked PoE port.","Check the router WAN connection and approved power supply.","Allow the equipment time to initialise and inspect status indicators.","Record indicator states and escalate with the customer location and device details."],warning:"Do not swap ports or power adapters based on guesswork."},
+{group:"Connectivity",title:"Weak or unstable signal",summary:"Inspect installation position, cabling and obstructions.",steps:["Check the ODU mounting is firm and has not shifted.","Inspect the line of sight for new obstructions.","Check connectors and cable runs for looseness or visible damage.","Recheck signal status using the approved installation process.","Document readings and escalate if signal remains below the approved threshold."],warning:"Follow approved mounting and rooftop safety procedures."},
+{group:"Setup",title:"Router cannot be accessed",summary:"Verify the device connection and correct login procedure.",steps:["Connect to the correct router network using the supplied details.","Confirm the phone or laptop has joined the router Wi-Fi.","Check that the correct management address is being used.","Re-enter credentials carefully; do not repeatedly guess passwords.","Escalate with the exact error message if access remains unavailable."],warning:"Never share customer credentials in public channels."},
+{group:"Installation",title:"No service after installation",summary:"Confirm activation, cabling and job completion checks.",steps:["Confirm all equipment connections match the approved diagram.","Check the service activation or provisioning status.","Restart equipment only where the approved procedure allows it.","Retest service with the customer and record the result.","Raise an escalation with job reference, device details and test evidence."],warning:"Do not mark a job complete until the required customer checks are done."},
+{group:"Cabling",title:"Cable or connector appears damaged",summary:"Identify damage and replace only with approved components.",steps:["Power down equipment if the approved procedure requires it.","Inspect the full cable route and both connector ends.","Do not use a cable with exposed conductors, crushed sections or damaged plugs.","Replace with the approved cable type and retest.","Photograph the issue and record the replacement in the job notes."],warning:"Do not attempt unsafe repairs to damaged power or network cables."}
+];
+export const modules = [
+{title:"Introduction to the PT10 ODU system",duration:"8 min",lessons:["Identify the ODU, router and UPS.","Understand the purpose of each component.","Review the approved installation overview."]},
+{title:"Tools, safety and site preparation",duration:"12 min",lessons:["Prepare the required tools and approved materials.","Assess the installation location and line of sight.","Apply ladder, rooftop and electrical safety practices."]},
+{title:"Understanding the UPS and power connections",duration:"10 min",lessons:["Identify the approved power outputs.","Understand the ODU power and data path.","Avoid unverified adapters and incorrect voltage."]},
+{title:"ODU mounting and alignment",duration:"15 min",lessons:["Select a suitable mounting position.","Secure the mounting hardware correctly.","Check alignment and cable protection."]},
+{title:"Router and ODU cabling",duration:"12 min",lessons:["Identify the labelled ports before connecting cables.","Connect the ODU data link to the correct PoE port.","Connect the router using the approved setup."]},
+{title:"Activation and service verification",duration:"10 min",lessons:["Follow the approved activation workflow.","Check service status and connectivity.","Verify service with the customer before leaving."]},
+{title:"Troubleshooting common installation issues",duration:"18 min",lessons:["Diagnose power and connectivity symptoms.","Inspect cabling, signal and device indicators.","Collect evidence and escalate unresolved faults."]},
+{title:"Job documentation and customer handover",duration:"8 min",lessons:["Record accurate job notes and device details.","Explain the setup and basic care to the customer.","Complete the required job checks and handover."]}
+];
+const bank = [
+["What should you use to power the router?","Any available adapter","Approved power output only","A damaged cable","An unverified 24V supply",1],
+["The ODU data link should connect to which UPS port?","Speaker","USB","Marked PoE port","12V OUT",2],
+["What should you do before connecting cables?","Guess the port","Check the port labels and approved diagram","Force the connector","Power everything randomly",1],
+["What is the first step when a device has no power?","Replace the router","Check the approved power source and connections","Reset all devices","Close the job",1],
+["What should you do with a visibly damaged cable?","Tape and reuse it","Ignore it","Replace it with an approved cable","Bend it straight",2],
+["What should be checked when internet is unavailable?","Only the customer phone","ODU, PoE, router and activation status","The TV remote","The installer wallet",1],
+["Why is correct ODU mounting important?","For appearance only","For stable positioning and signal","To shorten the job notes","To increase router volume",1],
+["What should you do if signal remains below the approved threshold?","Invent a reading","Document readings and escalate","Mark complete","Move equipment without approval",1],
+["When should a job be marked complete?","As soon as the installer arrives","After required checks and customer verification","Before testing","When the customer is away",1],
+["What is the safest response to an unfamiliar power adapter?","Try it briefly","Use it if it fits","Do not use it; verify the approved specification","Connect it to the ODU",2],
+["What should be included in a useful escalation?","Only 'not working'","Job reference, device details, symptoms and test evidence","A personal opinion","No details",1],
+["What should you do if router login fails?","Guess repeatedly","Verify network and login details, then escalate the error","Factory reset immediately","Share credentials publicly",1],
+["Why inspect the cable route?","To find damage or unsafe routing","To change the router name","To skip testing","To avoid documentation",0],
+["What should happen after activation?","Leave immediately","Verify service and customer experience","Disconnect the ODU","Delete the job",1],
+["Which action is appropriate around rooftop work?","Ignore weather and access","Follow approved working-at-height safety procedures","Work alone without precautions","Use unstable support",1],
+["What should you do if a connector does not fit?","Force it","Check that it is the correct connector and orientation","Cut the connector","Use pliers",1],
+["Why record device indicator states?","For decoration","To support accurate diagnosis and escalation","To avoid customer handover","It is never useful",1],
+["What is the purpose of the UPS in the setup?","To provide the specified power path/backup","To improve Wi-Fi password strength","To replace the ODU","To store job photos",0],
+["What should be checked if signal suddenly becomes weak?","Mounting, line of sight and cabling","Only the customer password","The installer's phone wallpaper","Nothing",0],
+["What should you do before leaving the site?","Confirm service and complete required handover","Leave cables loose","Skip customer checks","Delete the job notes",0],
+["How should customer credentials be handled?","Post them in a group chat","Keep them confidential and use approved processes","Share with other customers","Write them on public equipment",1],
+["What should you do if activation is pending?","Claim success","Follow the approved activation workflow and escalate delays","Mark the job complete","Disconnect the router",1],
+["Why use approved materials?","To ensure compatibility and safety","To make the job more expensive","To avoid testing","It does not matter",0],
+["What is a good troubleshooting approach?","Change many things at once","Check one item at a time and record findings","Guess and leave","Ignore the symptoms",1],
+["What should you do if the ODU mount is loose?","Leave it","Secure it using approved mounting procedures and safety controls","Pull the cable","Increase router power",1],
+["What information helps identify a job during escalation?","Job reference and customer/site details","Only first name","No identifying job information","A random number",0],
+["What should you do after replacing a cable?","Assume it works","Retest the service and document the replacement","Leave without checking","Delete previous notes",1],
+["What is the correct response to an unknown error message?","Invent a fix","Capture the exact message and escalate with context","Ignore it","Tell the customer it is normal",1],
+["Why should you explain the setup to the customer?","To support a clear handover and basic understanding","To avoid doing tests","To transfer responsibility","It is unnecessary",0],
+["What is the best action if a fault remains unresolved after approved checks?","Hide the fault","Record completed checks and escalate","Mark successful","Use unapproved parts",1]
+];
+export const questions = bank.map((q,i)=>({id:i+1,text:q[0],options:q.slice(1,5),correct:q[5]}));
